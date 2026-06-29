@@ -1,0 +1,23 @@
+void main() {
+  var subjects = ['Game', 'Mobile', 'Digital'];
+  print('Number of Subjects: ${subjects.length} วิชา');
+  print('Frist Subject: ${subjects[0]}');
+  print('Last Subject: ${subjects.last}');
+  subjects.add('Computer Network');
+  print('Update Number of Subjects: ${subjects.length} วิชา');
+  
+  var studentScores = {'Digital': 40, 'Mobile': 45, 'Game': 50};
+  print('Scores of Game: ${studentScores['Game']} คะแนน');
+  studentScores['Computer Network'] = 67;
+  print(studentScores);
+  studentScores.forEach((subjects, studentScores){
+    if (subjects.toLowerCase().contains('a')){
+      print('มี a เป็นส่วนประกอบ: $subjects: $studentScores คะแนน');
+    }
+  });
+  studentScores.forEach((subjects, studentScores){
+    if (studentScores > 50){
+      print('มีคะแนนมากกว่า50: $subjects: $studentScores คะแนน');
+    }
+  });
+}
