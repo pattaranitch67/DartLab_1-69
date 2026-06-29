@@ -1,0 +1,14 @@
+void main() {
+  var subjects = ['Game', 'Mobile', 'Digital'];
+  print('Number of Subjects: ${subjects.length}');
+  print('Frist Subject: ${subjects[0]}');
+  print('Last Subject: ${subjects.last}');
+  subjects.add('Computer Network');
+  print('Number of Subjects: ${subjects.length}');
+  
+  var studentScores = {'Digital': 60, 'Mobile': 55, 'Game': 67};
+  print(studentScores['Game']);
+  studentScores['Computer Network'] = 67;
+  print(studentScores);
+  print('SubjectsAndStudentScore')
+}
